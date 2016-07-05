@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    tools:context=".UI.StoryActivity"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/page0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="On your return trip from studying Saturn&apos;s rings, you hear a distress signal that seems to be coming from the surface of Mars. It&apos;s strange because there hasn&apos;t been a colony there in years. Even stranger, it&apos;s calling you by name: &quot;Help me, %1$s, you&apos;re my only hope."
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Continue home to Earth"
+        android:id="@+id/choice1Button"
+        android:layout_above="@+id/choice2Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Stop and investigate"
+        android:id="@+id/choice2Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
